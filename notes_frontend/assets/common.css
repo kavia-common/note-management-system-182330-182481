@@ -1,0 +1,490 @@
+:root {
+  /* Colors */
+  --color-252525: #252525;
+  --color-ff9e9e: #ff9e9e;
+  --color-000000: #000000;
+  --color-91f48f: #91f48f;
+  --color-fff599: #fff599;
+  --color-ffffff: #ffffff;
+  --color-3b3b3b: #3b3b3b;
+  --color-9effff: #9effff;
+  --color-b69cff: #b69cff;
+  --color-fd99ff: #fd99ff;
+  --color-ff0000: #ff0000;
+  --color-c4c4c4: #c4c4c4;
+  --color-cfcfcf: #cfcfcf;
+  --color-9a9a9a: #9a9a9a;
+  --color-263238: #263238;
+  --color-d4d6d7: #d4d6d7;
+  --color-7f8a8e: #7f8a8e;
+  --color-3b464c: #3b464c;
+  --color-4fb6b2: #4fb6b2;
+  --color-d0d0d0: #d0d0d0;
+  --color-606060: #606060;
+  --color-30be71: #30be71;
+  --color-cccccc: #cccccc;
+  --color-f4f5d5: #f4f5d5;
+
+  /* Typography */
+  --typo-0-family: 'Nunito', sans-serif;
+  --typo-0-size: 25px;
+  --typo-0-weight: 400;
+  --typo-0-line-height: 34.099998474121094px;
+  --typo-0-letter-spacing: 0px;
+  --typo-0-text-align: left;
+
+  --typo-1-family: 'Nunito', sans-serif;
+  --typo-1-size: 43px;
+  --typo-1-weight: 600;
+  --typo-1-line-height: 58.65199661254883px;
+  --typo-1-letter-spacing: 0px;
+  --typo-1-text-align: left;
+
+  --typo-2-family: 'Nunito', sans-serif;
+  --typo-2-size: 20px;
+  --typo-2-weight: 300;
+  --typo-2-line-height: 27.279998779296875px;
+  --typo-2-letter-spacing: 0px;
+  --typo-2-text-align: left;
+
+  --typo-3-family: 'Nunito', sans-serif;
+  --typo-3-size: 15px;
+  --typo-3-weight: 400;
+  --typo-3-line-height: 20.459999084472656px;
+  --typo-3-letter-spacing: 0px;
+  --typo-3-text-align: left;
+
+  --typo-4-family: 'Nunito', sans-serif;
+  --typo-4-size: 15px;
+  --typo-4-weight: 400;
+  --typo-4-line-height: 20.459999084472656px;
+  --typo-4-letter-spacing: 0px;
+  --typo-4-text-align: center;
+
+  --typo-5-family: 'Nunito', sans-serif;
+  --typo-5-size: 48px;
+  --typo-5-weight: 400;
+  --typo-5-line-height: 65.47200012207031px;
+  --typo-5-letter-spacing: 0px;
+  --typo-5-text-align: left;
+
+  --typo-6-family: 'Nunito', sans-serif;
+  --typo-6-size: 23px;
+  --typo-6-weight: 400;
+  --typo-6-line-height: 31.371999740600586px;
+  --typo-6-letter-spacing: 0px;
+  --typo-6-text-align: left;
+
+  --typo-7-family: 'Roboto', sans-serif;
+  --typo-7-size: 19px;
+  --typo-7-weight: 400;
+  --typo-7-line-height: 22.265625px;
+  --typo-7-letter-spacing: 0px;
+  --typo-7-text-align: center;
+
+  --typo-8-family: 'Roboto', sans-serif;
+  --typo-8-size: 13px;
+  --typo-8-weight: 500;
+  --typo-8-line-height: 15.234375px;
+  --typo-8-letter-spacing: 0px;
+  --typo-8-text-align: center;
+
+  --typo-9-family: 'Nunito', sans-serif;
+  --typo-9-size: 35px;
+  --typo-9-weight: 400;
+  --typo-9-line-height: 47.73999786376953px;
+  --typo-9-letter-spacing: 0px;
+  --typo-9-text-align: left;
+
+  --typo-10-family: 'Nunito', sans-serif;
+  --typo-10-size: 23px;
+  --typo-10-weight: 400;
+  --typo-10-line-height: 31.371999740600586px;
+  --typo-10-letter-spacing: 0px;
+  --typo-10-text-align: center;
+
+  --typo-11-family: 'Nunito', sans-serif;
+  --typo-11-size: 18px;
+  --typo-11-weight: 400;
+  --typo-11-line-height: 24.552000045776367px;
+  --typo-11-letter-spacing: 0px;
+  --typo-11-text-align: center;
+
+  --typo-12-family: 'Nunito', sans-serif;
+  --typo-12-size: 100px;
+  --typo-12-weight: 600;
+  --typo-12-line-height: 136.39999389648438px;
+  --typo-12-letter-spacing: 0px;
+  --typo-12-text-align: center;
+
+  --typo-13-family: 'Nunito', sans-serif;
+  --typo-13-size: 25px;
+  --typo-13-weight: 400;
+  --typo-13-line-height: 34.099998474121094px;
+  --typo-13-letter-spacing: 0px;
+  --typo-13-text-align: left;
+  --typo-13-color: var(--color-000000);
+
+  --typo-14-family: 'Nunito', sans-serif;
+  --typo-14-size: 43px;
+  --typo-14-weight: 600;
+  --typo-14-line-height: 58.65199661254883px;
+  --typo-14-letter-spacing: 0px;
+  --typo-14-text-align: left;
+  --typo-14-color: var(--color-ffffff);
+
+  --typo-15-family: 'Nunito', sans-serif;
+  --typo-15-size: 20px;
+  --typo-15-weight: 300;
+  --typo-15-line-height: 27.279998779296875px;
+  --typo-15-letter-spacing: 0px;
+  --typo-15-text-align: left;
+  --typo-15-color: var(--color-ffffff);
+
+  --typo-16-family: 'Nunito', sans-serif;
+  --typo-16-size: 15px;
+  --typo-16-weight: 400;
+  --typo-16-line-height: 20.459999084472656px;
+  --typo-16-letter-spacing: 0px;
+  --typo-16-text-align: left;
+  --typo-16-color: var(--color-cfcfcf);
+
+  --typo-17-family: 'Nunito', sans-serif;
+  --typo-17-size: 15px;
+  --typo-17-weight: 400;
+  --typo-17-line-height: 20.459999084472656px;
+  --typo-17-letter-spacing: 0px;
+  --typo-17-text-align: center;
+  --typo-17-color: var(--color-cfcfcf);
+
+  --typo-18-family: 'Nunito', sans-serif;
+  --typo-18-size: 48px;
+  --typo-18-weight: 400;
+  --typo-18-line-height: 65.47200012207031px;
+  --typo-18-letter-spacing: 0px;
+  --typo-18-text-align: left;
+  --typo-18-color: var(--color-9a9a9a);
+
+  --typo-19-family: 'Nunito', sans-serif;
+  --typo-19-size: 23px;
+  --typo-19-weight: 400;
+  --typo-19-line-height: 31.371999740600586px;
+  --typo-19-letter-spacing: 0px;
+  --typo-19-text-align: left;
+  --typo-19-color: var(--color-9a9a9a);
+
+  --typo-20-family: 'Roboto', sans-serif;
+  --typo-20-size: 19px;
+  --typo-20-weight: 400;
+  --typo-20-line-height: 22.265625px;
+  --typo-20-letter-spacing: 0px;
+  --typo-20-text-align: center;
+  --typo-20-color: var(--color-d4d6d7);
+
+  --typo-21-family: 'Roboto', sans-serif;
+  --typo-21-size: 13px;
+  --typo-21-weight: 500;
+  --typo-21-line-height: 15.234375px;
+  --typo-21-letter-spacing: 0px;
+  --typo-21-text-align: center;
+  --typo-21-color: var(--color-d4d6d7);
+
+  --typo-22-family: 'Nunito', sans-serif;
+  --typo-22-size: 35px;
+  --typo-22-weight: 400;
+  --typo-22-line-height: 47.73999786376953px;
+  --typo-22-letter-spacing: 0px;
+  --typo-22-text-align: left;
+  --typo-22-color: var(--color-ffffff);
+
+  --typo-23-family: 'Nunito', sans-serif;
+  --typo-23-size: 23px;
+  --typo-23-weight: 400;
+  --typo-23-line-height: 31.371999740600586px;
+  --typo-23-letter-spacing: 0px;
+  --typo-23-text-align: left;
+  --typo-23-color: var(--color-ffffff);
+
+  --typo-24-family: 'Nunito', sans-serif;
+  --typo-24-size: 23px;
+  --typo-24-weight: 400;
+  --typo-24-line-height: 31.371999740600586px;
+  --typo-24-letter-spacing: 0px;
+  --typo-24-text-align: center;
+  --typo-24-color: var(--color-cfcfcf);
+
+  --typo-25-family: 'Nunito', sans-serif;
+  --typo-25-size: 18px;
+  --typo-25-weight: 400;
+  --typo-25-line-height: 24.552000045776367px;
+  --typo-25-letter-spacing: 0px;
+  --typo-25-text-align: center;
+  --typo-25-color: var(--color-ffffff);
+
+  --typo-26-family: 'Nunito', sans-serif;
+  --typo-26-size: 20px;
+  --typo-26-weight: 300;
+  --typo-26-line-height: 27.279998779296875px;
+  --typo-26-letter-spacing: 0px;
+  --typo-26-text-align: left;
+  --typo-26-color: var(--color-cccccc);
+
+  --typo-27-family: 'Nunito', sans-serif;
+  --typo-27-size: 100px;
+  --typo-27-weight: 600;
+  --typo-27-line-height: 136.39999389648438px;
+  --typo-27-letter-spacing: 0px;
+  --typo-27-text-align: center;
+  --typo-27-color: var(--color-000000);
+
+  /* Styles as CSS variables for reuse */
+  --style-0-background-color: var(--color-252525);
+  --style-0-border-radius: 30px;
+
+  --style-1-background-color: var(--color-ff9e9e);
+  --style-1-border-radius: 10px;
+
+  --style-2-background-color: var(--color-000000);
+
+  --style-3-background-color: var(--color-91f48f);
+  --style-3-border-radius: 10px;
+
+  --style-4-background-color: var(--color-fff599);
+  --style-4-border-radius: 10px;
+
+  --style-5-background-color: var(--color-ffffff);
+
+  --style-6-background-color: var(--color-3b3b3b);
+  --style-6-border-radius: 15px;
+
+  --style-7-background-color: var(--color-9effff);
+  --style-7-border-radius: 10px;
+
+  --style-8-background-color: var(--color-b69cff);
+  --style-8-border-radius: 10px;
+
+  --style-9-background-color: var(--color-252525);
+
+  --style-10-background-color: var(--color-fd99ff);
+  --style-10-border-radius: 10px;
+
+  --style-11-background-color: var(--color-ff0000);
+  --style-11-border-radius: 10px;
+
+  --style-12-background-color: var(--color-c4c4c4);
+  --style-12-opacity: 0.20000000298023224;
+
+  --style-13-background-color: var(--color-252525);
+  --style-13-border-radius: 20px;
+
+  --style-14-background-color: var(--color-cfcfcf);
+
+  --style-15-opacity: 0.8700000047683716;
+
+  --style-16-background-color: var(--color-9a9a9a);
+
+  --style-17-background-color: var(--color-263238);
+
+  --style-18-background-color: var(--color-d4d6d7);
+
+  --style-19-background-color: var(--color-7f8a8e);
+
+  --style-20-border-color: var(--color-263238);
+  --style-20-border-width: 1.5px;
+
+  --style-21-background-color: var(--color-3b464c);
+  --style-21-border-radius: 3px;
+
+  --style-22-border-color: var(--color-d4d6d7);
+  --style-22-border-width: 1.5px;
+
+  --style-23-border-color: var(--color-d4d6d7);
+  --style-23-border-width: 1px;
+  --style-23-border-radius: 30px;
+
+  --style-24-background-color: var(--color-4fb6b2);
+
+  --style-25-border-color: var(--color-ffffff);
+  --style-25-border-width: 1.5px;
+
+  --style-26-background-color: var(--color-d0d0d0);
+
+  --style-27-background-color: var(--color-3b3b3b);
+  --style-27-border-radius: 15px;
+  --style-27-opacity: 0.800000011920929;
+
+  --style-28-opacity: 0.800000011920929;
+
+  --style-29-background-color: var(--color-ffffff);
+  --style-29-opacity: 0.800000011920929;
+
+  --style-30-background-color: var(--color-606060);
+
+  --style-31-background-color: var(--color-ff0000);
+  --style-31-border-radius: 5px;
+
+  --style-32-background-color: var(--color-30be71);
+  --style-32-border-radius: 5px;
+
+  --style-33-background-color: var(--color-3b3b3b);
+  --style-33-border-radius: 30px;
+
+  --style-34-background-color: var(--color-cccccc);
+
+  --style-35-border-color: var(--color-cccccc);
+  --style-35-border-width: 1px;
+
+  --style-36-background-color: var(--color-b69cff);
+
+  --style-37-background-color: var(--color-f4f5d5);
+
+  --style-38-border-radius: 60px;
+
+  --style-39-background-color: var(--color-252525);
+
+  --style-40-border-radius: 60px;
+
+  /* Shadows */
+  --shadow-0: -5px 0px 10px 0px rgba(0,0,0,1);
+  --shadow-1: 0px 5px 10px 0px rgba(0,0,0,1);
+  --shadow-2: 45px -10px 80px 0px rgba(0,0,0,1);
+
+  /* Spacing scale (raw list exposed as variables for possible use) */
+  --spacing-4px: 4px;
+  --spacing-6px: 6px;
+  --spacing-8px: 8px;
+  --spacing-10px: 10px;
+  --spacing-12px: 12px;
+  --spacing-14px: 14px;
+  --spacing-16px: 16px;
+  --spacing-20px: 20px;
+  --spacing-24px: 24px;
+  --spacing-28px: 28px;
+  --spacing-32px: 32px;
+  --spacing-36px: 36px;
+  --spacing-40px: 40px;
+  --spacing-48px: 48px;
+  --spacing-50px: 50px;
+  --spacing-57px: 57px;
+  --spacing-59px: 59px;
+  --spacing-60px: 60px;
+  --spacing-63px: 63px;
+  --spacing-64px: 64px;
+  --spacing-66px: 66px;
+  --spacing-67px: 67px;
+  --spacing-68px: 68px;
+  --spacing-70px: 70px;
+  --spacing-79px: 79px;
+  --spacing-93px: 93px;
+  --spacing-96px: 96px;
+  --spacing-100px: 100px;
+  --spacing-103px: 103px;
+  --spacing-108px: 108px;
+  --spacing-110px: 110px;
+  --spacing-112px: 112px;
+  --spacing-115px: 115px;
+  --spacing-120px: 120px;
+  --spacing-123px: 123px;
+  --spacing-124px: 124px;
+  --spacing-129px: 129px;
+  --spacing-132px: 132px;
+  --spacing-139px: 139px;
+  --spacing-141px: 141px;
+  --spacing-145px: 145px;
+  --spacing-154px: 154px;
+  --spacing-157px: 157px;
+  --spacing-171px: 171px;
+  --spacing-183px: 183px;
+  --spacing-186px: 186px;
+  --spacing-187px: 187px;
+  --spacing-189px: 189px;
+  --spacing-195px: 195px;
+  --spacing-206px: 206px;
+  --spacing-215px: 215px;
+  --spacing-236px: 236px;
+  --spacing-254px: 254px;
+  --spacing-259px: 259px;
+  --spacing-261px: 261px;
+  --spacing-262px: 262px;
+  --spacing-270px: 270px;
+  --spacing-274px: 274px;
+  --spacing-287px: 287px;
+  --spacing-290px: 290px;
+  --spacing-297px: 297px;
+  --spacing-309px: 309px;
+  --spacing-313px: 313px;
+  --spacing-330px: 330px;
+  --spacing-348px: 348px;
+  --spacing-350px: 350px;
+  --spacing-360px: 360px;
+  --spacing-365px: 365px;
+  --spacing-370px: 370px;
+  --spacing-393px: 393px;
+  --spacing-414px: 414px;
+  --spacing-447px: 447px;
+  --spacing-777px: 777px;
+  --spacing-896px: 896px;
+  --spacing-900px: 900px;
+  --spacing-960px: 960px;
+  --spacing-1100px: 1100px;
+  --spacing-1920px: 1920px;
+
+  /* Ocean Professional subtle theme hooks */
+  --ocean-accent: #3a7ca5;
+  --ocean-accent-2: #2f6690;
+  --ocean-focus: rgba(58,124,165,0.35);
+}
+
+* { box-sizing: border-box; }
+
+.figma-screen {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--style-0-background-color);
+  border-radius: var(--style-0-border-radius);
+  margin: 0 auto;
+}
+
+.text-typo-13 {
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  color: var(--typo-13-color);
+}
+
+.text-typo-14 {
+  font-family: var(--typo-14-family);
+  font-size: var(--typo-14-size);
+  font-weight: var(--typo-14-weight);
+  line-height: var(--typo-14-line-height);
+  letter-spacing: var(--typo-14-letter-spacing);
+  text-align: var(--typo-14-text-align);
+  color: var(--typo-14-color);
+}
+
+/* Utility for absolute element with easy z control */
+.abs { position: absolute; }
+
+/* Subtle Ocean Professional focus ring for interactive */
+.btn:focus-visible {
+  outline: 3px solid var(--ocean-focus);
+  outline-offset: 2px;
+}
+
+/* Crisp icons */
+.icon {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Ellipse base */
+.ellipse { border-radius: 50%; }
+
+/* Button base */
+.btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}

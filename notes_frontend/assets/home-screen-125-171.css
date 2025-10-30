@@ -1,0 +1,106 @@
+@import "./common.css";
+
+/* Screen container dimensions from JSON */
+#home-screen-125-171 {
+  width: 414px;
+  height: 1100px;
+}
+
+/* Z-index stacking based on children order */
+#rect-125-175 { z-index: 1; }
+#txt-125-176 { z-index: 2; }
+#txt-125-177 { z-index: 3; }
+#rect-125-178 { z-index: 4; }
+#txt-125-179 { z-index: 5; }
+#rect-125-180 { z-index: 6; }
+#txt-125-181 { z-index: 7; }
+#txt-125-186 { z-index: 8; }
+#btn-125-187 { z-index: 9; }
+#cmp-125-188 { z-index: 10; }
+#btn-125-189 { z-index: 11; }
+#cmp-125-190 { z-index: 12; }
+#rect-136-37 { z-index: 13; }
+#rect-136-38 { z-index: 14; }
+#txt-136-39 { z-index: 15; }
+#txt-136-40 { z-index: 16; }
+#ell-125-191 { z-index: 17; }
+#cmp-125-192 { z-index: 18; }
+
+/* Positions computed relative to root (1602, -823) => left = child.x - 1602, top = child.y - (-823) */
+#rect-125-175 { left: 24px; top: 143px; width: 365px; height: 157px; background: var(--style-1-background-color); border-radius: var(--style-1-border-radius); }
+#txt-125-176 { left: 69px; top: 168px; width: 270px; height: 103px; }
+#txt-125-177 { left: 69px; top: 190px; width: 0px; height: 32px; }
+#rect-125-178 { left: 24px; top: 323px; width: 365px; height: 123px; background: var(--style-3-background-color); border-radius: var(--style-3-border-radius); }
+#txt-125-179 { left: 69px; top: 352px; width: 254px; height: 64px; }
+#rect-125-180 { left: 24px; top: 471px; width: 365px; height: 110px; background: var(--style-4-background-color); border-radius: var(--style-4-border-radius); }
+#txt-125-181 { left: 69px; top: 494px; width: 259px; height: 67px; }
+
+#txt-125-186 { left: 24px; top: 47px; width: 115px; height: 59px; }
+
+#btn-125-187 { left: 339px; top: 51px; width: 50px; height: 50px; background: var(--style-6-background-color); border-radius: var(--style-6-border-radius); }
+#cmp-125-188 { left: 352px; top: 64px; width: 24px; height: 24px; }
+#btn-125-189 { left: 268px; top: 51px; width: 50px; height: 50px; background: var(--style-6-background-color); border-radius: var(--style-6-border-radius); }
+#cmp-125-190 { left: 281px; top: 64px; width: 24px; height: 24px; }
+
+#rect-136-37 { left: 24px; top: 606px; width: 365px; height: 120px; background: var(--style-7-background-color); border-radius: var(--style-7-border-radius); }
+#rect-136-38 { left: 24px; top: 751px; width: 365px; height: 100px; background: var(--style-8-background-color); border-radius: var(--style-8-border-radius); }
+
+#txt-136-39 { left: 69px; top: 632px; width: 287px; height: 68px; }
+#txt-136-40 { left: 69px; top: 768px; width: 297px; height: 66px; }
+
+#ell-125-191 { left: 309px; top: 777px; width: 70px; height: 70px; background: var(--style-39-background-color); border-radius: 50%; box-shadow: var(--shadow-0), var(--shadow-1); }
+#cmp-125-192 { left: 320px; top: 788px; width: 48px; height: 48px; }
+
+/* Children inside components positioned relative to their containers */
+#cmp-125-188 .icon-inner-8-9 {
+  position: absolute;
+  left: 2px; /* 1956 - 1954 */
+  top: 2px;  /* -757 - (-759) */
+  width: 20.000001907348633px;
+  height: 20px;
+}
+
+#cmp-125-190 .icon-inner-8-12 {
+  position: absolute;
+  left: 2.9993896484375px;  /* 1885.9993896484375 - 1883 */
+  top: 2.9993896484375px;   /*  -756.0006103515625 - (-759) ≈ 3 */
+  width: 17.048128128051758px;
+  height: 17.058124542236328px;
+}
+
+#cmp-125-192 .icon-inner-115-19 {
+  position: absolute;
+  left: 10px; /* 1932 - 1922 */
+  top: 10px;  /* -25 - (-35) */
+  width: 28px;
+  height: 28px;
+}
+
+/* Typography mapping */
+#txt-125-176,
+#txt-125-177,
+#txt-125-179,
+#txt-125-181,
+#txt-136-39,
+#txt-136-40 { color: var(--typo-13-color); }
+
+#txt-125-186 { color: var(--typo-14-color); }
+
+/* Buttons: subtle ocean hover while preserving design */
+#btn-125-187:hover,
+#btn-125-189:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 0 0 3px rgba(58,124,165,0.12);
+}
+
+/* Icon crispness */
+#cmp-125-188 img,
+#cmp-125-190 img,
+#cmp-125-192 img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Base absolute positioning for all items */
+#home-screen-125-171 > .abs {
+  position: absolute;
+}
